@@ -44,5 +44,5 @@ alias watchkgpa="watch kubectl get pods --all-namespaces"
 
 # Random helpers
 alias clip="xsel --clipboard"
-alias ezsh="vim ~/.oh-my-zsh/custom/custom.zsh"
+alias ezsh="vim ~/.oh-my-zsh/custom/oh-my-customizations.zsh"
 alias rzsh="source ~/.oh-my-zsh/custom/custom.zsh"
