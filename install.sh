@@ -37,4 +37,8 @@ fi
 echo "Configuring customizations to load..."
 appendToCustom "eval \"$(/usr/local/bin/direnv hook zsh)\""
 
+if ! dpkg -s "xsel" > /dev/null 2>&1; then
+  echo "Installing xsel..."
+  sudo apt-get install xsel
+fi
 echo "Completed setup!"
