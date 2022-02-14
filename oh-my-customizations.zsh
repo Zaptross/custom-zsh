@@ -6,6 +6,9 @@ dsc() {
     docker start $1
   fi
 }
+alias dcu="docker-compose up -d"
+alias dcue="docker-compose --env-file $1 up -d"
+alias dcd="docker-compose down"
 
 # Git shortcuts
 alias cmt="git commit -m"
