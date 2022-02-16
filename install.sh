@@ -2,12 +2,14 @@
 
 if [ -z ~/.zshrc ]; then
   echo "Installing Zsh..."
-  sudo apt install zsh
+  sudo apt install zsh -y
+  zsh
+  chsh "${which zsh}"
 fi
 
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "Installing Oh My Zsh..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/oh-my-zsh/oh-my-zsh/master/tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 appendToCustom() {
@@ -36,6 +38,20 @@ fi
 
 echo "Configuring customizations to load..."
 appendToCustom "eval \"$(/usr/local/bin/direnv hook zsh)\""
+
+if [ -x "$(command -v docker)"]; then
+  echo "Installing docker..."
+  sudo apt-get update -y
+  sudo apt-get install -y \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+fi
 
 if ! dpkg -s "xsel" > /dev/null 2>&1; then
   echo "Installing xsel..."

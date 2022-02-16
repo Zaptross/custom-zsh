@@ -27,7 +27,7 @@ gcuT() {
 }
 alias gdf="git diff HEAD $1"
 alias gdh="git diff HEAD | grep \"^[+-][^\n]\""
-glc() { git --no-pager log --oneline -n ${1:5} }
+glc() { git --no-pager log --oneline -n ${1:-5} }
 alias gri="git rebase -i $2 --onto $1"
 alias gsc="git diff --cached | grep \"^[+-][^\n]\""
 alias gstA="git add . && git stash push"
