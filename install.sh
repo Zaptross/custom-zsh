@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z ~/.zshrc ]; then
+if ! command -v zsh; then
   echo "Installing Zsh..."
   sudo apt install zsh -y
   zsh
@@ -30,8 +30,7 @@ fi
 
 if [ -z /usr/local/bin/direnv ]; then
   echo "Installing direnv..."
-  bin_path="/usr/local/bin/"
-  curl -sfL "https://direnv.net/install.sh" | bash
+  bin_path="/usr/local/bin/" curl -sfL "https://direnv.net/install.sh" | bash
 else
   echo "Found direnv..."
 fi
