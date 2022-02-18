@@ -55,6 +55,6 @@ if ! dpkg -s "xsel" > /dev/null 2>&1; then
   sudo apt-get install xsel
 fi
 
-chsh "$(which zsh)"
+chsh -s "$(which zsh)" $USER
 
 echo "Completed setup!"
