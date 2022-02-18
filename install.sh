@@ -4,7 +4,6 @@ if ! command -v zsh; then
   echo "Installing Zsh..."
   sudo apt install zsh -y
   zsh
-  chsh "${which zsh}"
 fi
 
 if [ ! -d ~/.oh-my-zsh ]; then
@@ -56,4 +55,7 @@ if ! dpkg -s "xsel" > /dev/null 2>&1; then
   echo "Installing xsel..."
   sudo apt-get install xsel
 fi
+
+chsh "$(which zsh)"
+
 echo "Completed setup!"
