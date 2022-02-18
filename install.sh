@@ -17,7 +17,7 @@ appendToCustom() {
   echo "$1" >> ~/.oh-my-zsh/custom/custom.zsh
 }
 
-if [ -z ~/.oh-my-zsh/custom/custom.zsh ]; then
+if [ -z ~/.oh-my-zsh/custom/oh-my-customizations.zsh ]; then
   echo "Downloading main customisations file..."
   curl -fsSL "https://raw.githubusercontent.com/zaptross/custom-zsh/main/oh-my-customizations.zsh" > ~/.oh-my-zsh/custom/oh-my-customizations.zsh
 
