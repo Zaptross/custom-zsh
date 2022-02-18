@@ -3,7 +3,6 @@
 if ! command -v zsh; then
   echo "Installing Zsh..."
   sudo apt install zsh -y
-  zsh
 fi
 
 if [ ! -d ~/.oh-my-zsh ]; then
