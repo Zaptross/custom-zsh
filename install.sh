@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt upgrade
+
 if ! command -v zsh; then
   echo "Installing Zsh..."
   sudo apt install zsh -y
