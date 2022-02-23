@@ -8,14 +8,21 @@ if ! command -v zsh; then
   sudo apt install zsh -y
 fi
 
-if [ ! -d ~/.oh-my-zsh ]; then
+if ! -d ~/.oh-my-zsh ; then
   echo "Installing Oh My Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  echo "Please run zsh, choosing recommended settings, then run this script again to continue setup."
+  exit
 fi
 
 appendToCustom() {
   echo "$1" >> ~/.oh-my-zsh/custom/custom.zsh
 }
+
+if [ -z ~/.oh-my-zsh/custom/custom.zsh ]; then
+  touch ~/.oh-my-zsh/custom/custom.zsh
+  echo "Created missing custom.zsh file..."
+fi
 
 if [ -z ~/.oh-my-zsh/custom/oh-my-customizations.zsh ]; then
   echo "Downloading main customisations file..."
@@ -39,7 +46,7 @@ fi
 echo "Configuring customizations to load..."
 appendToCustom "eval \"$(/usr/local/bin/direnv hook zsh)\""
 
-if [ -x "$(command -v docker)"]; then
+if [ command -v docker ]; then
   echo "Installing docker..."
   sudo apt-get update -y
   sudo apt-get install -y \
