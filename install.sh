@@ -5,7 +5,12 @@ sudo apt upgrade -y
 
 if ! command -v zsh; then
   echo "Installing Zsh..."
-  sudo apt install zsh -y
+  sudo apt install zsh -y > /dev/null 2>&1
+fi
+
+if ! command -v git; then
+  echo "Installing git..."
+  sudo apt install git -y > /dev/null 2>&1
 fi
 
 if ! -d ~/.oh-my-zsh ; then
