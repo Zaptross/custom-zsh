@@ -13,11 +13,9 @@ if ! command -v git; then
   sudo apt install git -y > /dev/null 2>&1
 fi
 
-if ! -d ~/.oh-my-zsh ; then
+if [ ! -d ~/.oh-my-zsh ]; then
   echo "Installing Oh My Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  echo "Please run zsh, choosing recommended settings, then run this script again to continue setup."
-  exit
 fi
 
 appendToCustom() {
