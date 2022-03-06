@@ -16,8 +16,8 @@ let mapleader=" "
 :nmap <leader>ch :s/^/# /<Esc><Esc>
 :nmap <leader><leader>ch :s/# /<Esc><Esc>
 
-:nmap <leader>% :Vex
-:nmap <leader>" :Sex
+:nmap <leader>% :Vex<Return>
+:nmap <leader>" :Sex<Return>
 :nmap <C-h> <C-w>h
 :nmap <C-j> <C-w>j
 :nmap <C-k> <C-w>k
