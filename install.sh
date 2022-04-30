@@ -3,6 +3,9 @@
 sudo apt update
 sudo apt upgrade -y
 
+curl -fsSL "https://raw.githubusercontent.com/zaptross/custom-zsh/main/.vimrc" > ~/.vimrc
+curl -fsSL "https://raw.githubusercontent.com/zaptross/custom-zsh/main/.tmux.conf" > ~/.tmux.conf
+
 if ! command -v zsh; then
   echo "Installing Zsh..."
   sudo apt install zsh -y > /dev/null 2>&1
