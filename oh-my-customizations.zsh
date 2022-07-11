@@ -1,7 +1,7 @@
 # Docker shortcuts
 alias d="docker"
 dsc() {
-  if [! "$(docker ps -q -f name=$1)" ]; then
+  if [ ! "$(docker ps -q -f name=$1)" ]; then
     echo "Starting $1..."
     docker start $1
   fi
@@ -13,7 +13,7 @@ alias dcd="docker-compose down"
 # Git shortcuts
 alias cmt="git commit -m"
 alias gbDa="git branch -D `git branch --list $1`"
-alias gbL="git branch -l"
+alias gbL="git branch -l --sort=-committerdate"
 alias gbR="git branch -r"
 gbcT() {
 	read "branchName?Describe temp branch to create: " && git checkout -b "temp/$branchName"
