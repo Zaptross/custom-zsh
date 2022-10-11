@@ -17,3 +17,11 @@ curl -fsSL https://raw.githubusercontent.com/zaptross/custom-zsh/main/install.sh
 * [flameshot](https://flameshot.org/#download)
 * [oh-my-zsh](https://ohmyz.sh/)
 
+### Configurations
+* Sets vim as both `EDITOR` and `VISUAL`
+* Requires user input to set up github SSH key for git
+* Links `.vimrc` as vim's config file with hardlink
+* Links `.tmux.conf` as tmux's config file with hardlink
+* Sources `oh-my-customisation.zsh` into zsh
+* Sources `oh-my-local.zsh` (untracked) into zsh
+
