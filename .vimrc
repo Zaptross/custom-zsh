@@ -16,8 +16,10 @@ let mapleader=" "
 :nmap <leader>ch :s/^/# /<Esc><Esc>
 :nmap <leader><leader>ch :s/# /<Esc><Esc>
 
-:nmap <leader>% :Vex<Return>
-:nmap <leader>" :Sex<Return>
+:nmap <leader>%f :Vex<Return>
+:nmap <leader>%t :vert term<Return>
+:nmap <leader>"f :Sex<Return>
+:nmap <leader>"t :term<Return>
 :nmap <C-h> <C-w>h
 :nmap <C-j> <C-w>j
 :nmap <C-k> <C-w>k
