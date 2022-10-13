@@ -1,7 +1,9 @@
 set number
 set autoindent
-set tabstop=4
+set tabstop=2
+set shiftwidth=2
 set ls=2
+set scrolloff=5
 let mapleader=" "
 :nmap <leader>O O<Esc>
 :nmap <leader>o o<Esc>
