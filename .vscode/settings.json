@@ -1,0 +1,581 @@
+{
+  "debug.toolBarLocation": "docked",
+  "debug.onTaskErrors": "abort",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "'Consolas ligaturized v3', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 160,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    80,
+    160
+  ],
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 60000,
+  "gitlens.keymap": "none",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "json.maxItemsComputed": 10000,
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.fontFamily": "'Consolas ligaturized v3',monospace",
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.replaceWithRegister": true,
+  "vim.sneak": true,
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-a>": false,
+    "<C-v>": false
+  },
+  "vim.searchHighlightColor": "#073642",
+  "vim.incsearch": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "<C-.>"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "/",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "H"
+      ],
+      "commands": [
+        "workbench.action.replaceInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "h"
+      ],
+      "commands": [
+        "editor.action.startFindReplaceAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "s"
+      ],
+      "commands": [
+        "git.stageSelectedRanges"
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "<A-/>"
+      ],
+      "commands": [
+        "editor.action.inlineSuggest.trigger"
+      ]
+    },
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "."
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "d"
+      ],
+      "commands": [
+        "editor.action.insertCursorBelow"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "a"
+      ],
+      "commands": [
+        "editor.action.insertCursorAbove"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "c"
+      ],
+      "commands": [
+        "workbench.debug.viewlet.action.removeAllBreakpoints"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "a"
+      ],
+      "commands": [
+        "editor.debug.action.toggleBreakpoint"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "I"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ":",
+        "r"
+      ],
+      "commands": [
+        "workbench.action.reloadWindow"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "c"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "copyRelativeFilePath"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "r"
+      ],
+      "commands": [
+        ":tabonly"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "X"
+      ],
+      "commands": [
+        "workbench.action.reopenClosedEditor"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        ":tabprev"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        ":tabnext"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "o"
+      ],
+      "after": [
+        "o",
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "O"
+      ],
+      "after": [
+        "O",
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "m",
+        "a",
+        "b"
+      ],
+      "commands": [
+        "merge-conflict.accept.both"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "m",
+        "a",
+        "c"
+      ],
+      "commands": [
+        "merge-conflict.accept.current"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "m",
+        "a",
+        "i"
+      ],
+      "commands": [
+        "merge-conflict.accept.incoming"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "["
+      ],
+      "commands": [
+        "editor.foldRecursively"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "]"
+      ],
+      "commands": [
+        "editor.unfoldRecursively"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "/",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.replaceInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "v",
+        "f"
+      ],
+      "after": [
+        "b",
+        "v",
+        "w",
+        "C-C",
+        "<leader>",
+        "/",
+        "/",
+        "C-V"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "K"
+      ],
+      "commands": [
+        "editor.action.copyLinesUpAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "J"
+      ],
+      "commands": [
+        "editor.action.copyLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "r"
+      ],
+      "commands": [
+        "git.revertSelectedRanges"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "s"
+      ],
+      "commands": [
+        "git.stage"
+      ]
+    },
+    {
+      "before": [
+        "C-h"
+      ],
+      "commands": [
+        "workbench.action.focusPreviousGroup"
+      ]
+    },
+    {
+      "before": [
+        "C-l"
+      ],
+      "commands": [
+        "workbench.action.focusNextGroup"
+      ]
+    },
+    {
+      "before": [
+        "C-k"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
+    },
+    {
+      "before": [
+        "C-j"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        ","
+      ],
+      "commands": [
+        "workbench.action.openSettingsJson"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        "k",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.openGlobalKeybindings"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        "u",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.openSnippets"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.editor.changeLanguageMode"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "quokka.createTypeScriptFile"
+      ]
+    }
+  ]
+}
