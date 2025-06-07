@@ -31,6 +31,15 @@
   "json.maxItemsComputed": 10000,
   "terminal.integrated.allowChords": false,
   "terminal.integrated.fontFamily": "'Consolas ligaturized v3',monospace",
+  "terminal.integrated.env.linux": {
+    "IS_VSCODE": "true"
+  },
+  "terminal.integrated.env.osx": {
+    "IS_VSCODE": "true"
+  },
+  "terminal.integrated.env.windows": {
+    "IS_VSCODE": "true"
+  },
   "window.zoomLevel": -1,
   "workbench.colorTheme": "Solarized Dark",
   "workbench.preferredDarkColorTheme": "Solarized Dark",
