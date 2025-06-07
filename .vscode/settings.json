@@ -51,7 +51,7 @@
   "vim.handleKeys": {
     "<C-c>": false,
     "<C-a>": false,
-    "<C-v>": false
+    "<C-v>": false,
   },
   "vim.searchHighlightColor": "#073642",
   "vim.incsearch": true,
@@ -150,6 +150,39 @@
     }
   ],
   "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<C-<>"
+      ],
+      "commands": [
+        "workbench.action.openSettingsJson"
+      ]
+    },
+    {
+      "before": [
+        "<A-F>"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>",
+        "<C-s>",
+      ],
+      "commands": [
+        "workbench.action.openGlobalKeybindings"
+      ]
+    },
+    {
+      "before": [
+        "<C-p>"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
     {
       "before": [
         "<leader>",

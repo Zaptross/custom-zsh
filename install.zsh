@@ -21,6 +21,24 @@ ask_yes_no() {
     done
 }
 
+if [[ ! "$SCRIPT_DIR" == *"custom-zsh"* ]]; then
+    echo "This script must be run from the custom-zsh repository."
+    if ask_yes_no "Do you want to clone the repository now?"; then
+        # if ~/repos doesnt exist, create it
+        if [[ ! -d "$HOME/repos" ]]; then
+            mkdir -p "$HOME/repos"
+            echo "Created directory: $HOME/repos"
+        fi
+        git clone https://github.com/Zaptross/custom-zsh.git
+        cd "$HOME/repos/custom-zsh" || exit 1
+        echo "Cloned custom-zsh repository to $HOME/repos/custom-zsh"
+        SCRIPT_DIR="$HOME/repos/custom-zsh"
+    else
+        echo "Please run this script from your existing custom-zsh repository or clone the repository first."
+        exit 1
+    fi
+fi
+
 # Copy dotfiles (excluding .gitignore)
 echo "\n--- Dotfiles ---"
 for file in "$SCRIPT_DIR"/.*; do
