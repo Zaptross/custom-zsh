@@ -16,5 +16,6 @@ dsr() {
 }
 
 alias watchdps="watch \"docker ps --format \\\"table {{.Names}}	{{.Status}}	{{.State}}	{{.RunningFor}}\\\"\""
+alias dps="docker ps --format 'table {{.Names}}	{{.Status}}	{{.State}}	{{.RunningFor}}'"
 
 echo "Loaded docker shortcuts"
